@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: #212529;
+}  
+
+.probs > ul{
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+}

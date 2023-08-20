@@ -25,7 +25,7 @@ function Home() {
 
         </div>
     </section>
-    <footer className="home-footer" id="footer">
+    <footer className="home-footer bg-idol" id="footer">
        <Footer />
     </footer>
 
