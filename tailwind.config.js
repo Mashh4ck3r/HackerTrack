@@ -8,6 +8,7 @@ export default {
     colors: {
       primary: '#1a2332',
       secondary: '#9fef00',
+      idol:"#212529",
       'white': '#ffffff',
       'black':'#111927',
     },

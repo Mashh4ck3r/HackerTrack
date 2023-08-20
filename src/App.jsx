@@ -11,8 +11,11 @@ function App() {
   return (
 
     <Router>
-    <Home />
+      <Routes>
+          <Route index element={<Home />} />
+      </Routes>
     </Router>
+
   )
 }
 
