@@ -12,10 +12,10 @@ function Programs() {
         <Navbar />
         </header>
         <section className="programs">
-            <div className="baner sticky top-0 z-[-100]  w-full h-60 flex justify-center items-center ">
+            <div className="baner bg-secondary sticky top-0 z-[-100]  w-full h-60 flex justify-center items-center ">
                 <h1 className="text-4xl text-white font-bold">banner background</h1>
             </div>
-            <div className="search-fun border-b-2 border-b-secondary flex gap-5 mx-60 p-20 justify-between py-28 bg-black">
+            <div className="search-fun border-b-2 border-b-secondary translate-y-[-100px] flex gap-5 mx-60 p-20 justify-between bg-black">
                 <select name="" id="" className='w-52 p-3'>
                     <option value="">option 1</option>
                     <option value="">option 1</option>

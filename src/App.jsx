@@ -4,6 +4,8 @@ import './App.css'
 import ProgramCard from './components/Programs/ProgramCard'
 import Home from './Pages/Home/Home'
 import Programs from './Pages/Program/Programs'
+import Login from './Pages/LoginOrSignUp/Login'
+import ProgramDetails from './Pages/Program/ProgramDetails'
 
 function App() {
 
@@ -15,6 +17,9 @@ function App() {
       <Routes>
           <Route index element={<Home />} />
           <Route path={'/programs'} element={<Programs/>} />
+          <Route path={'/programs/:slug'} element={<ProgramDetails/>} />
+
+          <Route path={'/login'} element={<Login />} />
       </Routes>
     </Router>
 

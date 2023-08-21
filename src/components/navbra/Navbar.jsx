@@ -17,7 +17,7 @@ function Navbar() {
                 <li className="list-item nav-item"><Link to='/'>Why HackTrack </Link></li>
                 <li className="list-item nav-item"><Link to='/'>Quick Check </Link></li>
                 <li className="list-item nav-item"><Link to='/'>Skill Test </Link></li>
-                <li className="list-item nav-item"><Link to='/'>
+                <li className="list-item nav-item"><Link to='/login'>
                     <button className='btn rounded-md bg-secondary px-5 py-2'>Get Started</button>
                  </Link></li>
             </ul>

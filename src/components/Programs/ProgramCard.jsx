@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
 import defaultImg from '../../assets/react.svg'
+import { Link } from 'react-router-dom';
 import './Programs.css';
 
 function ProgramCard() {
+
 
     const [data, setData] = useState([])
 
@@ -44,7 +46,9 @@ function ProgramCard() {
                             </div>
                         </div>
                         <div className="prog-footer flex justify-center items-center p-3">
-                            <button className='hover:bg-secondary rounded-md px-4 py-1 border-secondary border-2'>see details </button>
+                            <button className='hover:bg-secondary rounded-md px-4 py-1 border-secondary border-2'>
+                                <Link to={`/programs/${item.slug}`}>See Details</Link>
+                            </button>
                         </div>
                     </div>
                 ))
