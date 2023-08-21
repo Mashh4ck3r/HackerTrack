@@ -5,6 +5,7 @@ import Footer from '../../components/footer/Footer'
 import Slider from '../../components/Slider'
 import { Link } from 'react-router-dom'
 import WhatCard from './WhatCard'
+import Contactus from './Contactus'
 
 function Home() {
   return (
@@ -45,9 +46,27 @@ function Home() {
           </ul>
 
         </div>
+
+        <div className="border-b-secondary grid grid-cols-2 text-white border-b-2 py-20 px-52">
+          <div className="right-content">
+          <h1 className=" text-5xl font-bold text-secondary ">Get started with <span className='text-white'> HackTrack</span> </h1>
+          <p className="">Hackers aren’t waiting, so why should you? See how Bugcrowd can quickly improve your security posture.</p>
+          </div>
+          <div className="btn-content  place-self-center flex gap-4">
+            <button className="bg-transprant  border-secondary border-2 transition duration-300 ease-in-out text-white px-5 bor py-2 hover:bg-secondary font-semibold">
+              <Link className="" to={'/'}>Get Started</Link>
+            </button>
+            <button className="bg-transprant border-secondary border-2 transition duration-300 ease-in-out text-white px-5 bor py-2 hover:bg-secondary font-semibold">
+              <Link className="" to={'/'}>Contact Us</Link>
+            </button>
+          </div>
+        </div>
         
-        <div className="px-40">
+        <div className="px-40 border-b-secondary border-b-2">
          <WhatCard />
+        </div>
+        <div className="px-40 bg-black border-b-secondary border-b-2">
+          <Contactus />
         </div>
     </section>
     <footer className="home-footer bg-idol" id="footer">

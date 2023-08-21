@@ -9,6 +9,10 @@ body{
     background-color: #212529;
 }  
 
+input:focus{
+    outline: 0.1em solid #9fef00;
+}
+
 .probs > ul{
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
 }
