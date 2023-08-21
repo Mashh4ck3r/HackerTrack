@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function Navbar() {
   return (
     <div>
-        <nav className="nav navbar bg-black flex justify-between sticky  items-center py-3 px-16 text-white">
+        <nav className="nav navbar z-50 bg-black flex justify-between sticky  items-center py-3 px-16 text-white">
             <div className="brand text-4xl flex gap-2 items-center">
                 <GiSpy className='  text-secondary' />
                 HackTrack

@@ -12,3 +12,10 @@ body{
 .probs > ul{
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
 }
+
+.dark-shadow{
+    -webkit-box-shadow: 7px 11px 20px 4px rgba(0,0,0,0.93);
+-moz-box-shadow: 7px 11px 20px 4px rgba(0,0,0,0.93);
+box-shadow: 7px 11px 20px 4px rgba(0,0,0,0.93);
+
+}
