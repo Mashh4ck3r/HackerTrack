@@ -25,10 +25,10 @@ function Slider() {
         modules={[Pagination,Autoplay]}
         className="mySwiper w-[100%] h-[100%] p-28 "
       >
-        <SwiperSlide className=' bg-black'>Slide 1</SwiperSlide>
-        <SwiperSlide className=' bg-black'>Slide 2</SwiperSlide>
-        <SwiperSlide className=' bg-black'>Slide 3</SwiperSlide>
-        <SwiperSlide className=' bg-black'>Slide 4</SwiperSlide>
+        <SwiperSlide className=' bg-black z-0'>Slide 1</SwiperSlide>
+        <SwiperSlide className=' bg-black z-0'>Slide 2</SwiperSlide>
+        <SwiperSlide className=' bg-black z-0'>Slide 3</SwiperSlide>
+        <SwiperSlide className=' bg-black z-0'>Slide 4</SwiperSlide>
       </Swiper>
     </>
   )

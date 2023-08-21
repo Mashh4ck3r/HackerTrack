@@ -6,8 +6,18 @@ body{
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    background-color: #212529;
+    background-color: #1a2332;
 }  
+
+select {
+    appearance: none;
+    outline: none;
+}
+
+option{
+    padding: 3px;
+    margin: 40px;
+}
 
 input:focus{
     outline: 0.1em solid #9fef00;
