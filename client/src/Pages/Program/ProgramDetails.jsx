@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { progm,baner } from '../../assets';
 import Navbar from '../../components/navbra/Navbar';
 import Footer from '../../components/footer/Footer';
+import AboutProgram from './AboutProgram';
 
 
 
@@ -58,7 +59,27 @@ function ProgramDetails() {
 
                 </div>
 
-                <div className="main-progs h-[1000px]">
+                <div className="main-progs bg-black m-20 px-24 pt-40 pb-20">
+                    <nav className="detail-nav flex items-center justify-between py-3 px-10 border-b-primary border-b-4">
+                        <ul className="flex justify-between items-center gap-16">
+                            <li className="">Program details</li>
+                            <li className="">Announcements </li>
+                            <li className="">Hall of Fame</li>
+                        </ul>
+                        <div className="">
+                            <button className="">
+                                Bounty History
+                            </button>
+                        </div>
+                    </nav>
+                    <div className="main-content">
+                        <div className="left-content" id='program-details'>
+                            <AboutProgram data={Details.rules_html} />
+                        </div>
+                        <div className="announcment" id="announcement">
+                            
+                        </div>
+                    </div>
 
                 </div>
 
