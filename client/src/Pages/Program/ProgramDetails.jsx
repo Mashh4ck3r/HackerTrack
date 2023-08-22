@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react';
 import {AiOutlineSafety,AiFillFlag} from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { progm,baner } from '../../assets';
 import Navbar from '../../components/navbra/Navbar';
 import Footer from '../../components/footer/Footer';
 
@@ -29,23 +30,23 @@ function ProgramDetails() {
             </header>
             <section className="details">
                 <div className="banar h-60 w-full opacity-40">
-                    <img className='object-cover aspect-video w-full h-60' src={Details?.banner?.url || Details?.thumbnail?.url} alt={Details?.title} />
+                    <img className='object-cover aspect-video w-full h-60' src={Details?.banner?.url || baner} alt={Details?.title} />
                 </div>
-                <div className="prog-details px-40 py-10 absolute top-[160px]">
+                <div className="prog-details w-full px-40 py-10 absolute top-[160px]">
                     <div className="detail-nav text-white text-2xl font-semibold grid grid-cols-3 p-6">
                         <h1 className="">{"< "} Programs</h1>
                         <h1 className=""><span className=' text-secondary'> / </span>{ Details?.title}</h1>
                     </div>
-                    <div className="detail-head dark-shadow flex gap-12 px-20 py-10 bg-black">
+                    <div className="detail-head dark-shadow w-full flex gap-12 px-20 py-10 bg-black">
                          <div className="left-detail">
-                            <img className=' rounded-full' src={Details?.thumbnail?.url} alt={Details?.title} />
+                            <img className='rounded-full w-40 h-30 object-cover' src={Details?.thumbnail?.url || progm} alt={Details?.title} />
                          </div>
-                         <div className="right-detail flex flex-col justify-between">
+                         <div className="right-detail flex flex-col w-full justify-between">
                            <div className="">
                            <h1 className="text-3xl font-semibold mb-2">{Details?.title}</h1>
                             <p className="text-sm">{Details?.business_unit?.description}</p>
                            </div>
-                            <div className="bounty grid grid-flow-col auto-cols-maxitems-center pt-10 place-items-center">
+                            <div className="bounty grid grid-flow-col  auto-cols-maxitems-center pt-10 justify-items-start place-items-center">
                             <AiFillFlag />
                             <p className="">${Details?.bounty_reward_min } - ${Details?.bounty_reward_max }</p>
                             <p className="">{Details.public && "per vulnerability"}</p>

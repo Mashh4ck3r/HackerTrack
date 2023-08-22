@@ -3,6 +3,7 @@ import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
 import defaultImg from '../../assets/react.svg'
 import { Link } from 'react-router-dom';
 import './Programs.css';
+import { progm } from '../../assets';
 
 function ProgramCard() {
 
@@ -26,7 +27,7 @@ function ProgramCard() {
                     <div className='text-white program-card w-60 h-80 flex gap-1 flex-col justify-between  bg-black rounded-md dark-shadow' key={i}>
                         <div className="py-2 px-3 prog-head border-b-[1px] border-b-secondary flex justify-between items-center">
                             <div className="prog-brand flex overflow-hidden flex-nowrap items-center gap-2">
-                                <img src={item.business_unit.logo.url || defaultImg} alt={item.business_unit.logo.original_name} className="brand rounded-full w-9 bg-white" />
+                                <img src={item.business_unit.logo.url || progm} alt={item.business_unit.logo.original_name} className="brand rounded-full w-9 bg-white" />
                                 <h1 className='flex flex-nowrap'>{item.business_unit.name.slice(0, 16)}</h1>
                             </div>
                             <AiOutlineStar />
