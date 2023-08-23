@@ -59,7 +59,7 @@ function Home() {
               <Link className="" to={'/'}>Get Started</Link>
             </button>
             <button className="bg-transprant border-secondary border-2 transition duration-300 ease-in-out text-white px-5 bor py-2 hover:bg-secondary font-semibold">
-              <Link className="" to={'/'}>Contact Us</Link>
+              <a className="" href={'#contact-us'}>Contact Us</a>
             </button>
           </div>
         </div>
@@ -67,7 +67,7 @@ function Home() {
         <div className="px-40 border-b-secondary border-b-2">
          <WhatCard />
         </div>
-        <div className="px-40 bg-black border-b-secondary border-b-2">
+        <div className="px-40 bg-black border-b-secondary border-b-2" id='contact-us'>
           <Contactus />
         </div>
     </section>

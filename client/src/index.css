@@ -7,6 +7,7 @@ body{
     margin: 0%;
     padding: 0%;
     background-color: #1a2332;
+    scroll-behavior: smooth;
 } 
 
 select {
@@ -43,24 +44,14 @@ box-shadow: 7px 11px 20px 4px rgba(0,0,0,0.93);
 	        animation: slide-top 1s ease-in-out infinite alternate forwards;
 }
 
- @-webkit-keyframes slide-top {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
-    }
-  }
   @keyframes slide-top {
     0% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
     100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
     }
   }
   
