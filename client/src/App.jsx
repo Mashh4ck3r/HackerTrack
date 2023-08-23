@@ -7,12 +7,14 @@ import Programs from './Pages/Program/Programs'
 import Login from './Pages/LoginOrSignUp/Login'
 import ProgramDetails from './Pages/Program/ProgramDetails'
 import CheckUrl from './Pages/check/CheckUrl'
+import GoToTopButton from './components/GoToTop'
 
 function App() {
 
 
 
   return (
+    <>
 
     <Router>
       <Routes>
@@ -23,6 +25,11 @@ function App() {
           <Route path={'/login'} element={<Login />} />
       </Routes>
     </Router>
+    
+    <GoToTopButton />
+
+
+    </>
 
   )
 }
