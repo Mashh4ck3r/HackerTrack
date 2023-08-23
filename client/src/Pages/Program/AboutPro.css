@@ -20,7 +20,7 @@ div .about-progm-detail p{
 }
 
 
-div .about-progm-detail li{
+div .about-progm-detail li,.vulnerability li{
     font-size:small;
     display: flex;
     gap: 5px;
@@ -30,7 +30,7 @@ div .about-progm-detail li{
     margin: 0 30px;
 }
 
-div .about-progm-detail li::before {
+div .about-progm-detail li::before,.vulnerability li::before {
     content: "/";
     font-size:large;
     color: #9fef00;

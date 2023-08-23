@@ -4,23 +4,30 @@ import defaultImg from '../../assets/react.svg'
 import { Link } from 'react-router-dom';
 import './Programs.css';
 import { progm } from '../../assets';
+import { Loader } from '../Loader/Loader';
 
 function ProgramCard() {
 
 
     const [data, setData] = useState([])
+    const [loading,setLoading] = useState(false)
 
     useEffect(() => {
+        setLoading(true);
         fetch('https://api.yeswehack.com/programs')
             .then(res => res.json())
-            .then(data => setData(data))
+            .then(data => {
+                setData(data);
+                setLoading(false);
+            })
             .catch(err => console.log(err))
     }, [])
     console.log(data)
 
     const items = data?.items
 
-    return (
+    return (<>
+                    {loading && <Loader loading={loading} />}
         <div className='grid grid-cols-4 gap-y-12'>
             {
                 items?.map((item, i) => (
@@ -31,6 +38,7 @@ function ProgramCard() {
                                 <h1 className='flex flex-nowrap'>{item.business_unit.name.slice(0, 16)}</h1>
                             </div>
                             <AiOutlineStar />
+                            
                         </div>
                         <div className="prog-body py-2 px-3 border-b-[1px] border-b-secondary flex-1">
                             <div className="info flex flex-col gap-4">
@@ -55,7 +63,9 @@ function ProgramCard() {
                 ))
             }
 
+
         </div>
+        </>
     )
 }
 

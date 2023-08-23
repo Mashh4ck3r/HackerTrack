@@ -19,6 +19,10 @@ option{
     margin: 40px;
 }
 
+input{
+    color:black
+}
+
 input:focus{
     outline: 0.1em solid #9fef00;
 }

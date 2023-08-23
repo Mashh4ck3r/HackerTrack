@@ -7,6 +7,7 @@ import { progm,baner } from '../../assets';
 import Navbar from '../../components/navbra/Navbar';
 import Footer from '../../components/footer/Footer';
 import AboutProgram from './AboutProgram';
+import ScopeTable from './ScopeTable';
 
 
 
@@ -77,8 +78,53 @@ function ProgramDetails() {
                             <AboutProgram data={Details.rules_html} />
                         </div>
                         <div className="announcment" id="announcement">
-                            
+                            <div className="scope">
+                                <h1 className="text-3xl py-11 font-semibold text-secondary">Scopes</h1>
+                                <ScopeTable data={Details.scopes} />
+                            </div>
+                            <div className="out-of-scope grid grid-cols-2">
+                                 <div className="">
+                                    <h1 className="text-3xl py-11 font-semibold text-secondary">Non-qualifying vulnerabilities</h1>
+                                    <ul className="vulnerability">{
+                                        Details?.non_qualifying_vulnerability?.map((item,i)=>(
+                                            <li className="" key={i}>{item}</li>
+                                        ))
+                                    }</ul>
+                                 </div>
+                                 <div className="">
+                                    <div className="">
+                                        <h1 className="text-3xl py-11 font-semibold text-secondary">Out of scopes</h1>
+                                        <ul className="vulnerability">{
+                                        Details?.out_of_scope?.map((item,i)=>(
+                                            <li className="" key={i}>{item}</li>
+                                        ))
+                                        }</ul>
+                                    </div>
+                                    <div className="">
+                                        <h1 className="text-3xl py-11 font-semibold text-secondary">Qualifying vulnerabilities</h1>
+                                        <ul className="vulnerability">{
+                                        Details?.qualifying_vulnerability?.map((item,i)=>(
+                                            <li className="" key={i}>{item}</li>
+                                        ))
+                                        }</ul>
+                                    </div>
+                                 </div>
+                            </div>
                         </div>
+
+                        <div className="detail-footer flex flex-col gap-7">
+                            <h1 className="text-2xl font-semibold text-secondary">Hunting requirements</h1>
+                            <div className="">
+                                <h1 className="text-2xl font-semibold">ACCOUNT ACCESS</h1>
+                                <div className="text-sm" dangerouslySetInnerHTML={{__html:Details?.account_access_html}}></div>
+                            </div>
+                            <div className="">
+                                <h1 className="text-xl font-semibold">USER AGENT</h1>
+                                <p className="text-sm">{Details?.user_agent}</p>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>

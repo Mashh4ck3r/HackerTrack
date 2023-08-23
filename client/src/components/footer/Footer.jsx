@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom'
 const Footer = () =>{
     return(
         <>
+         <div className="footer bg-idol">
          <div className="footer flex gap-48 mx-60 p-16 bg-idol border-b-secondary border-b-2" id="footer">
             <div className="brand text-5xl text-white font-bold flex-col flex gap-2 items-center">
                 <GiSpy className='  text-secondary' />
@@ -42,6 +43,7 @@ const Footer = () =>{
                 <li className="social-items"><SlSocialGithub /></li>
                 <li className="social-items"><SlSocialFacebook /></li>
             </ul>
+         </div>
          </div>
         </>
     );

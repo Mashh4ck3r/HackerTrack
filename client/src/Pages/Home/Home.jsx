@@ -12,6 +12,8 @@ function Home() {
     <>
     <header className="home-head sticky top-0">
         <Navbar />
+       
+
     </header>
     <section className="main bg-primary text-secondary" id="main">
         <div className="hero w-[100%] h-[90vh] border-secondary border-b-2" id="hero">
