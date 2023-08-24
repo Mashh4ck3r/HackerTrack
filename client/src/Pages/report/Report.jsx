@@ -12,6 +12,40 @@ function Report() {
             </div>
             </>
     )
+
+    const vulnerabilities = [
+        "SQL Injection",
+        "Cross-Site Scripting (XSS)",
+        "Cross-Site Request Forgery (CSRF)",
+        "Insecure Deserialization",
+        "Broken Authentication",
+        "Broken Access Control",
+        "Security Misconfiguration",
+        "Sensitive Data Exposure",
+        "XML External Entity (XXE) Injection",
+        "Remote Code Execution",
+        "Command Injection",
+        "Unvalidated Redirects and Forwards",
+        "File Inclusion Vulnerabilities",
+        "Buffer Overflow",
+        "Denial of Service (DoS)",
+        "Server-Side Request Forgery (SSRF)",
+        "Unvalidated Input",
+        "Privilege Escalation",
+        "Cryptography Weaknesses",
+        "Insufficient Logging and Monitoring"
+    ]
+
+    const vulnerable_parts = [
+        "get-parameter",
+        "post-parameter",
+        "cookie",
+        "header",
+        "path",
+        "http-method",
+        "http-response",
+        "others"
+    ]
                 
 
   return (
@@ -40,9 +74,10 @@ function Report() {
                                     <div className="p-2">
                                         <p className=" py-2">Bug type</p>
                                         <select name="Select bug type" id="" className='text-black w-full h-10 rounded-md px-3'>
-                                            <option value="">adf</option>
-                                            <option value="">adf</option>
-                                            <option value="">adf</option>
+                                           {
+                                            vulnerabilities.map((item,i)=><option value={item} key={i}>{item}</option>)
+                                           }
+                                           
                                         </select>
                                     </div>
                                     <div className="p-2 col-span-2">
@@ -52,9 +87,10 @@ function Report() {
                                     <div className="p-2">
                                         <p className=" py-2">Vulnerable part</p>
                                         <select name="Select bug type" id="" className='text-black w-full h-10 rounded-md px-3'>
-                                            <option value="">adf</option>
-                                            <option value="">adf</option>
-                                            <option value="">adf</option>
+                                            
+                                            {
+                                                vulnerable_parts.map((item,i)=><option value={item} key={i}>{item}</option>)
+                                            }
                                         </select>
                                     </div>
                                     <div className="p-2">
