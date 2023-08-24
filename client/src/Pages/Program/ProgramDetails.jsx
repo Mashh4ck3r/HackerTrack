@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState,useEffect } from 'react';
+import { useState,useEffect,createContext } from 'react';
 import {AiOutlineSafety,AiFillFlag} from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
@@ -8,6 +8,7 @@ import Navbar from '../../components/navbra/Navbar';
 import Footer from '../../components/footer/Footer';
 import AboutProgram from './AboutProgram';
 import ScopeTable from './ScopeTable';
+
 
 
 
@@ -24,8 +25,11 @@ function ProgramDetails() {
     }, [])
   
     const Details = data
+
   return (
     <>
+
+
         <div className="prog-details text-white">
             <header className="">
                 <Navbar />
@@ -53,7 +57,7 @@ function ProgramDetails() {
                             <p className="">${Details?.bounty_reward_min } - ${Details?.bounty_reward_max }</p>
                             <p className="">{Details.public && "per vulnerability"}</p>
                             <p className="flex items-center gap-2 text-secondary">{Details.bounty && <AiOutlineSafety /> }Safe harbor</p>
-                            <button className=" rounded-xl border-secondary border-2 px-4 py-1 justify-self-end"><Link>SUBMIT REPORT</Link></button>
+                            <button className=" rounded-xl border-secondary border-2 px-4 py-1 justify-self-end"><Link to={'/report'}>SUBMIT REPORT</Link></button>
                             </div>
                          </div>
                     </div>

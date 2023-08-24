@@ -15,7 +15,7 @@ function Home() {
        
 
     </header>
-    <section className="main bg-primary text-secondary" id="main">
+    <section className="main bg-primary text-secondary scroll-smooth" id="main">
         <div className="hero w-[100%] h-[90vh] border-secondary border-b-2" id="hero">
           <Slider />
         </div>
