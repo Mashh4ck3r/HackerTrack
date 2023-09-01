@@ -17,7 +17,7 @@ const Footer = () =>{
             <div className="list-items">
                 <ul className=" text-white">
                     <li className=" text-2xl mb-4 border-b-2 border-b-secondary font-semibold ">options 1</li>
-                    <li className="">class 1</li>
+                    <li className="">help </li>
                     <li className="">class 1</li>
                     <li className="">class 1</li>
                     <li className="">class 1</li>
